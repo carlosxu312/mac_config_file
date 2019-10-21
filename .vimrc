@@ -30,6 +30,8 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'jiangmiao/auto-pairs'
 " vim 自动 tab 补全
 Plugin 'vim-scripts/SuperTab'
+" vim中的Markdown插件
+Plugin 'plasticboy/vim-markdown'
 Plugin 'fatih/vim-go'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
