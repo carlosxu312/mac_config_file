@@ -24,15 +24,17 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'Blackrush/vim-gocode'
 Plugin 'majutsushi/tagbar'
+Plugin 'ianva/vim-youdao-translater'
 " 可以使 nerdtree 的 tab 更加友好
 Plugin 'jistr/vim-nerdtree-tabs'
 " 自动括号补全
 Plugin 'jiangmiao/auto-pairs'
 " vim 自动 tab 补全
 Plugin 'vim-scripts/SuperTab'
-" vim中的Markdown插件
 Plugin 'plasticboy/vim-markdown'
 Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-surround'
+Plugin 'rizzatti/dash.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " let Vundle manage Vundle, required
@@ -56,3 +58,7 @@ filetype plugin on    " required
 map <C-n> :NERDTreeToggle<CR>
 " 导航🌲️只需要关闭一遍
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" 有道翻译快捷键
+vnoremap <silent> <C-T> :<C-u>Ydv<CR>
+nnoremap <silent> <C-T> :<C-u>Ydc<CR>
+noremap <leader>yd :<C-u>Yde<CR>

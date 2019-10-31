@@ -170,6 +170,8 @@ alias dsp="docker stop"
 alias ds="docker start"
 alias dl="docker logs --tail=50"
 alias drm="docker rmi"
+#redis
+alias redisd="redis-server /usr/local/etc/redis.conf"
 ########## alias end  ###############
 
 # 命令高亮模块
