@@ -172,6 +172,7 @@ alias dl="docker logs --tail=50"
 alias drm="docker rmi"
 #redis
 alias redisd="redis-server /usr/local/etc/redis.conf"
+alias ra="ranger"
 ########## alias end  ###############
 
 # 命令高亮模块
@@ -193,3 +194,5 @@ export PATH=$PATH:$GOBIN
 # fi
 source ~/.bash_profile
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
