@@ -24,7 +24,6 @@ set nu
 " 设置当前行号
 set relativenumber
 " 设置显示当前行
-set cursorline
 set rtp+=/usr/local/opt/fzf
 " 启用vundle来管理vim插件
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -59,6 +58,8 @@ Plugin 'vim-airline/vim-airline-themes'
 " Markdown 相关
 Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
 Plugin 'plasticboy/vim-markdown'
+
+Plugin 'tpope/vim-fugitive'
 
 " fzf相关
 Plugin 'junegunn/fzf'
@@ -157,3 +158,16 @@ source ~/.vim/snippits.vim
 " 设置配色
 colorscheme snazzy
 " fzf
+
+
+"设置指针样式
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\""
+
+" Airline 配置
+let g:airline_theme='bubblegum'
+let g:airline#extensions#tabline#enabled = 1
